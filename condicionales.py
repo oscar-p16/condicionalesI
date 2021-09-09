@@ -15,4 +15,20 @@ else:
     descuento=(compra*0.20);
 total= compra-descuento;
 print('el valor total a pagar es de:','$',total);
-print('el descuento fue de:','$',descuento)    
+print('el descuento fue de:','$',descuento);    
+
+print('................................................')
+
+#descuento concurso
+total_compra= int(input("ingrese el precio total:"));
+numero=int(input("estimado clienta escoja un numero y participe en el descuento:"));
+if numero<74:
+    descuento=(total_compra*0.15);
+else:
+    descuento=(total_compra*0.20);
+totalc= total_compra-descuento;
+print('el valor total a pagar es de:','$',totalc);
+print('el descuento fue de:','$',descuento);    
+   
+
+    
