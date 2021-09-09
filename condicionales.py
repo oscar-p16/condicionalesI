@@ -42,14 +42,35 @@ pago= capital+interes;
 print('la cuota total es de:','$',pago);
 print('el interes es de:','$',interes);    
    
+print('................................................')
 
+d1=int(input("ingrese puntos del dia 1:"));
+d2=int(input("ingrese puntos del dia 2:"));
+d3=int(input("ingrese puntos del dia 3:"));
+d4=int(input("ingrese puntos del dia 4:"));
+d5=int(input("ingrese puntos del dia 5:"));
 
+sumad= d1+d2+d3+d4+d5;
 
+g1=int(input("ingrese las ganancias del dia 1:"));
+g2=int(input("ingrese las ganancias del dia 2:"));
+g3=int(input("ingrese las ganancias del dia 3:"));
+g4=int(input("ingrese las ganancias del dia 4:"));
+g5=int(input("ingrese las ganancias del dia 5:"));
 
+sumag= g1+g2+g3+g4+g5;
 
+if sumad>170:
+    multa=sumag*0.50;
+else:
+    multa=0;
+gd= sumag-multa;
+print('el total de puntos recolectados en los  5 dias es:', sumad);
+print('el total de las ganancias de los 5 dias es de','$',sumag);
+print('la multa por contaminacion es de','$',multa);    
+print('el total de dinero recibido despues del proceso es','$',gd);
 
-
-
+print('................................................')
 
 
 
