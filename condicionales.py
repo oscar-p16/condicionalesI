@@ -30,5 +30,35 @@ totalc= total_compra-descuento;
 print('el valor total a pagar es de:','$',totalc);
 print('el descuento fue de:','$',descuento);    
    
+print('................................................')
+
+#compañia de seguros
+capital= int(input("ingrese el capital a financiar:"));
+if capital<50000:
+    interes=(capital*0.03);
+else:
+    interes=(capital*0.02);
+pago= capital+interes;
+print('la cuota total es de:','$',pago);
+print('el interes es de:','$',interes);    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
