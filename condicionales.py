@@ -117,8 +117,30 @@ total_des= totalpc-descuento_pc;
 print('el valor total a pagar por',numero_pc,'computadoras es de:','$',total_des);
 print('el descuento aplicado es de',"$", descuento_pc);    
     
+print('................................................')  
+
+#electrodomesticos
+precio_e=int(input("ingrese el precio del electrodomestico:"));
+marca=(input("ingrese la marca del electrodomestico:"));
+total=precio_e;
+iva=16;
+
+if marca=='nosy' and precio_e>=2000:
+    descuento=precio_e*0.16;
+if precio_e>2000:
+    descuento=precio_e*0.10;
     
-             
+total_e = precio_e-descuento;
+iva_e=(total_e*iva)/100;
+total_final=total_e+iva_e;
+
+print('el total a pagar es','$',precio_e);
+print('el descuento aplicado es de','$',descuento);
+print('saldo total del iva','$',iva_e);
+print('el total del precio con iva incluido es de','$',total_final);    
+
+print('................................................')              
+  
 
 
 
