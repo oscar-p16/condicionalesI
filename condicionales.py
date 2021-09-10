@@ -100,6 +100,25 @@ else:
           
 print('................................................')
 
+#computadoras
+numero_pc=int(input("ingrese la cantidad de computadoras a comprar:"));
+precio=11000;
+totalpc=numero_pc*precio;
+
+if numero_pc<5:
+   descuento_pc=totalpc*0.10;
+if numero_pc>=5 and numero_pc<10:
+    descuento_pc=totalpc*0.20;
+else:
+    descuento_pc=totalpc*0.40;
+
+total_des= totalpc-descuento_pc;
+
+print('el valor total a pagar por',numero_pc,'computadoras es de:','$',total_des);
+print('el descuento aplicado es de',"$", descuento_pc);    
+    
+    
+             
 
 
 
