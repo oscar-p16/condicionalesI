@@ -9,11 +9,14 @@ print('................................................')
 cantidad=int(input("ingresar la cantidad de camisas:"));
 precio=int(input("ingresar el precio:"));
 compra= cantidad*precio;
+
 if cantidad>=3:
     descuento=(compra*0.10);
 else:
     descuento=(compra*0.20);
+
 total= compra-descuento;
+
 print('el valor total a pagar es de:','$',total);
 print('el descuento fue de:','$',descuento);    
 
@@ -22,11 +25,14 @@ print('................................................')
 #descuento concurso
 total_compra= int(input("ingrese el precio total:"));
 numero=int(input("estimado clienta escoja un numero y participe en el descuento:"));
+
 if numero<74:
     descuento=(total_compra*0.15);
 else:
     descuento=(total_compra*0.20);
+
 totalc= total_compra-descuento;
+
 print('el valor total a pagar es de:','$',totalc);
 print('el descuento fue de:','$',descuento);    
    
@@ -34,11 +40,14 @@ print('................................................')
 
 #compañia de seguros
 capital= int(input("ingrese el capital a financiar:"));
+
 if capital<50000:
     interes=(capital*0.03);
 else:
     interes=(capital*0.02);
+
 pago= capital+interes;
+
 print('la cuota total es de:','$',pago);
 print('el interes es de:','$',interes);    
    
@@ -65,6 +74,7 @@ if sumad>170:
 else:
     multa=0;
 gd= sumag-multa;
+
 print('el total de puntos recolectados en los  5 dias es:', sumad);
 print('el total de las ganancias de los 5 dias es de','$',sumag);
 print('la multa por contaminacion es de','$',multa);    
@@ -72,9 +82,23 @@ print('el total de dinero recibido despues del proceso es','$',gd);
 
 print('................................................')
 
+#decremento aunal
+precio_comun= int(input("ingrese el precio del carro y del terreno:"));
+incremento= int(input("ingrese el incremento aunal del terreno:"));
+decremento= int(input("ingrese el decremento aunal del carro:"));
 
+incremento = (((precio_comun * incremento) / 100) * 3) / 2;
+decremento = ((precio_comun * decremento) / 100) * 3;
 
+print('la mitad del incremento del terreno al pasar 3 años es de:','$', incremento);
+print('el decremento del carro al pasar 3 años es de','$',decremento);
 
+if decremento<incremento:
+    print('conviene comprar el carro');
+else:
+    print('conviene comprar el terreno');
+          
+print('................................................')
 
 
 
