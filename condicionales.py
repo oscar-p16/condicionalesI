@@ -165,6 +165,28 @@ print('el interes es de:','$', interess);
     
 print('................................................')  
 
+#operaciones
+n1=int(input('digite el primer numero:'));
+n2=int(input('digite el segundo numero:'));
+
+if n1==n2:
+    operacion=n1*n2;
+if n1>n2:
+    operacion=n1-n2;
+if n1<n2:
+    operacion=n1+n2;
+
+print('el resultado de la operacion es:', operacion);
+    
+print('................................................')  
+
+
+
+
+
+
+
+
 
 
 
