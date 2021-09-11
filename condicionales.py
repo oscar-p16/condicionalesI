@@ -139,8 +139,31 @@ print('el descuento aplicado es de','$',descuento);
 print('saldo total del iva','$',iva_e);
 print('el total del precio con iva incluido es de','$',total_final);    
 
-print('................................................')              
-  
+print('................................................') 
+
+#empreza
+npiezas=int(input("ingrese el numero de piezas solicitado:"));
+costo_p=int(input("ingrese el costo por pieza:"));
+totalp=npiezas*costo_p;
+
+if totalp>500000:
+     invertir=totalp*0.55;
+     prestamo=totalp*0.30;
+     credito=totalp*0.15;
+else:
+     invertir=totalp*0.70;
+     prestamo=totalp*0;
+     credito=totalp*0.30;
+
+interess=credito*0.20;
+
+print('costo de las piesas','$',totalp);
+print('el monto a invertir es de:','$',invertir);
+print('el monto del prestamo r es de:','$',prestamo);
+print('el monto del credito es de:','$',credito);
+print('el interes es de:','$', interess);
+    
+print('................................................')  
 
 
 
